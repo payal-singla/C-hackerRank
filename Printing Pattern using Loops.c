@@ -58,3 +58,27 @@ Sample Output 2
 7 6 5 5 5 5 5 5 5 5 5 6 7 
 7 6 6 6 6 6 6 6 6 6 6 6 7 
 7 7 7 7 7 7 7 7 7 7 7 7 7 */
+#include <stdio.h>
+
+int main() 
+{
+    int n, size=0;
+    scanf("%d", &n);
+    size = (n*2)-1 ;
+    int a=0,b=size-1,i,j,arr[size+10][size+10];
+    while(n != 0){
+    for ( i=a;i<=b;i++){
+      for ( j=a;j<=b;j++){
+        if (i==a || i==b || j==a || j==b )
+          arr[i][j]=n;
+          }}
+          a++;
+          b--;
+          n--;
+      }
+      for ( i=0;i<size;i++){
+      for ( j=0;j<size;j++){
+    printf("%d ",arr[i][j]);}
+          printf("\n");}
+    return 0;
+}
