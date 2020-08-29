@@ -25,3 +25,20 @@ Sample Input 0
 Sample Output 0
 
 16 */
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int n,sum=0,remainder=0;
+    scanf("%d", &n);
+    for(int i=0;i<5;i++){
+      remainder=n%10;
+     sum=sum +remainder;
+      n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
